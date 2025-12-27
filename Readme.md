@@ -14,6 +14,28 @@ and ask questions based strictly on their content using **Google Gemini** and **
 
 ---
 
+## Use Cases
+```
+New hires learn company tech stack via chatbot.
+
+Employees query company policies instead of searching multiple PDFs.
+
+Customer asks a question, bot answers strictly from product documentations.(Customer Support)
+
+Students upload textbooks and ask conceptual questions.
+
+Lawyers query contracts without manually scanning documents.
+
+Researcher uploads multiple papers and asks comparative questions.
+
+```
+---
+## why not just use chat gpt?
+```
+“ChatGPT may hallucinate. RAG ensures answers come only from trusted documents.”
+```
+
+---
 ## Tech Stack
 - Node.js
 - Google Gemini API
@@ -65,13 +87,3 @@ node ingest.js
 node query.js
 
 
-## Use Cases
-```
-Study notes Q&A
-
-Research paper analysis
-
-Interview preparation
-
-Company document search
-```

@@ -48,7 +48,7 @@ async function chatting(userProblem){
       //queery vector
     const queryVector = await embeddings.embedQuery(rewrittenQuery);
 
-///make connection with pinecone
+/// connection with pinecone
 const pinecone = new Pinecone();
 const pineconeIndex = pinecone.Index(process.env.PINECONE_INDEX_NAME);
 
@@ -62,7 +62,7 @@ const searchResults = await pineconeIndex.query({
     // console.log(searchResults);
 
 
- //top 10 documents: 10 metadata text part
+ //top 5 documents: 5 metadata text part
     const context = searchResults.matches
                    .map(match => match.metadata.text)
                    .join("\n\n---\n\n");
